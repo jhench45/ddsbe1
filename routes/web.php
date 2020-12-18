@@ -23,3 +23,8 @@ $router->get('dashboard', ['as' => 'dashboard', 'uses' => 'UserController@dashbo
 $router->post('/users',['uses' => 'UserController@addUsers']);
 $router->put('/users/{id}',['uses' => 'UserController@updateUser']);
 $router->delete('/users/{id}',['uses' => 'UserController@deleteUser']);
+
+
+// userjob routes
+$router->get('/usersjob','UserJobController@index');
+$router->get('/userjob/{id}','UserJobController@show'); // get user by id
